@@ -1,4 +1,3 @@
 ### See
 
-https://moldis-group.github.io/BODIPYs/
-
+https://susmita-tripathy.github.io/fhi-aims_notes/
