@@ -2,11 +2,20 @@
 layout: default
 ---
 
-## BODIPYs dataset
+## FHI-aims Tutorials
 
-The BODIPYs dataset [Ref-1] contains (gas phase) DFT level geometries and TDDFT level properties of the S<sub>0</sub> → S<sub>1</sub> first electronic excited state of 77412 molecules derived from the BODIPY dye by combinatorial substitution.
+The following incorporates the input files and results obtained from FHI-aims tutorials. The lecture videos and slides used during the tutorials are given here: [https://indico.fhi-berlin.mpg.de/event/112/] (https://indico.fhi-berlin.mpg.de/event/112/)
+***)
 
 ***
+## TUTORIAL1: Basics of Electron Structure Theory
+
+### Spin Unpolarised Simulations:
+
+### Spin Polarised Simulations:
+
+### Periodic Systems:
+
 
 ## BODIPYs
 
