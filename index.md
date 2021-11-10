@@ -4,7 +4,7 @@ layout: default
 
 ## FHI-aims Tutorials
 
-The following incorporates the input files and results obtained from FHI-aims tutorials. The lecture videos and slides used during the tutorials are given here: [https://indico.fhi-berlin.mpg.de/event/112/] (https://indico.fhi-berlin.mpg.de/event/112/)
+The following incorporates the input files and results obtained from FHI-aims tutorials. The lecture videos and slides used during the tutorials are given here: [https://indico.fhi-berlin.mpg.de/event/112/](https://indico.fhi-berlin.mpg.de/event/112/)
 ***)
 
 ***
