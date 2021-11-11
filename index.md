@@ -6,10 +6,27 @@ layout: default
 
 The following incorporates the input files and results obtained from FHI-aims tutorials. The lecture videos and slides used during the tutorials are given here: [https://indico.fhi-berlin.mpg.de/event/112/](https://indico.fhi-berlin.mpg.de/event/112/)
 
+Resources for plotting: Clims, GIMS, python3
 ***
 ## TUTORIAL1: Basics of Electron Structure Theory
+The aims calculations is run using the command: mpirun -n N aims.x | tee aims.out
 
 ### Spin Unpolarised Simulations:
+# Relaxation of H2O molecule without the effect of spin:
+Input: geometry.in [], control.in [] (PBE, appended with light species defaults of H and O)
+
+Output: aims.out [] (Contains all information of the system) geometry.in.next_step (Geometry of the final relaxed structure), hessian.aims (contains hessian of previous calculations, used in further convergence of relaxed structure)
+
+# Restarting structure relaxation using output from previous relaxations
+Input: geometry.in [] (geometry.in.next_step from earlier output), hessian.aims [] (from earlier output), control.in [] (HSE, intermediate H, O)
+
+Output: aims.out []
+
+# Structure relaxation of H2O molecule using HSE
+This is done to highlight the computational advantage of relaxing a pre-relaxed structure with light settings over starting the relaxation from scratch for a more accurate system (HSE > PBE)
+Input: geometry.in [] (input1), control.in [] (HSE, intermediate H,O)
+
+Output: aims.out (Compare "Number of self-consistency cycles" between aims.out of earlier output and here)  
 
 ### Spin Polarised Simulations:
 
