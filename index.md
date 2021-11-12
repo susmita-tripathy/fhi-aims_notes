@@ -2,17 +2,17 @@
 layout: default
 ---
 
-## FHI-aims Tutorials
+### FHI-aims Tutorials
 
 The following incorporates the input files and results obtained from FHI-aims tutorials. The lecture videos and slides used during the tutorials are given here: [https://indico.fhi-berlin.mpg.de/event/112/](https://indico.fhi-berlin.mpg.de/event/112/)
 
 Resources for plotting: Clims, GIMS, python3
 
 ***
-## TUTORIAL1: Basics of Electron Structure Theory
+### TUTORIAL1: Basics of Electron Structure Theory
 The aims calculations is run using the command: mpirun -n N aims.x | tee aims.out
 
-### Spin Unpolarised Simulations:
+## Spin Unpolarised Simulations:
 # Relaxation of H2O molecule without the effect of spin:
 Input: geometry.in [], control.in [] (PBE, appended with light species defaults of H and O)
 
@@ -30,9 +30,9 @@ Input: geometry.in [] (input1), control.in [] (HSE, intermediate H,O)
 
 Output: aims.out (Compare "Number of self-consistency cycles" between aims.out of earlier output and here)  
 
-### Spin Polarised Simulations:
+## Spin Polarised Simulations:
 
-### Periodic Systems:
+## Periodic Systems:
 
 
 ## BODIPYs
