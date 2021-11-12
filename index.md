@@ -25,6 +25,7 @@ Output: aims.out []
 
 # Structure relaxation of H2O molecule using HSE
 This is done to highlight the computational advantage of relaxing a pre-relaxed structure with light settings over starting the relaxation from scratch for a more accurate system (HSE > PBE)
+
 Input: geometry.in [] (input1), control.in [] (HSE, intermediate H,O)
 
 Output: aims.out (Compare "Number of self-consistency cycles" between aims.out of earlier output and here)  
