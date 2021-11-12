@@ -13,7 +13,8 @@ Resources for plotting: Clims, GIMS, python3
 The aims calculations is run using the command: mpirun -n N aims.x | tee aims.out
 
 ## Spin Unpolarised Simulations:
-# Relaxation of H2O molecule without the effect of spin:
+Relaxation of H2O molecule without the effect of spin:
+
 Input: geometry.in [], control.in [] (PBE, appended with light species defaults of H and O)
 
 Output: aims.out [] (Contains all information of the system) geometry.in.next_step (Geometry of the final relaxed structure), hessian.aims (contains hessian of previous calculations, used in further convergence of relaxed structure)
