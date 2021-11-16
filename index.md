@@ -15,14 +15,14 @@ The aims calculations is run using the command: mpirun -n N aims.x | tee aims.ou
 ## Spin Unpolarised Simulations:
 Relaxation of H2O molecule without the effect of spin:
 
-Input: [geometry.in](fhi-aims_notes/H2O/geometry.in), [control.in](/fhi-aims_notes/H2O/control.in), (PBE, appended with light species defaults of H and O)
+Input: [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in), [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)
 
-Output: aims.out [] (Contains all information of the system) geometry.in.next_step (Geometry of the final relaxed structure), hessian.aims (contains hessian of previous calculations, used in further convergence of relaxed structure)
+Output: [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/aims.out) (Contains all information of the system) [geometry.in.next_step](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in.next_step) (Geometry of the final relaxed structure), [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/hessian.aims) (contains hessian of previous calculations, used in further convergence of relaxed structure)
 
 # Restarting structure relaxation using output from previous relaxations
-Input: geometry.in [] (geometry.in.next_step from earlier output), hessian.aims [] (from earlier output), control.in [] (HSE, intermediate H, O)
+Input: [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/geometry.in) (geometry.in.next_step from earlier output), [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/hessian.aims) (from earlier output, keyword hessian indicates that hessian.aims will be provided with geometry.in), [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)
 
-Output: aims.out []
+Output: [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/aims.out)
 
 # Structure relaxation of H2O molecule using HSE
 This is done to highlight the computational advantage of relaxing a pre-relaxed structure with light settings over starting the relaxation from scratch for a more accurate system (HSE > PBE)
