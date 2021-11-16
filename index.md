@@ -9,7 +9,7 @@ The following incorporates the input files and results obtained from FHI-aims tu
 Resources for plotting: Clims, GIMS, python3
 
 ***
-### TUTORIAL1: Basics of Electron Structure Theory
+# TUTORIAL1: Basics of Electron Structure Theory
 The aims calculations is run using the command: mpirun -n N aims.x | tee aims.out
 
 ## Spin Unpolarised Simulations:
@@ -19,12 +19,12 @@ Input: [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/mai
 
 Output: [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/aims.out) (Contains all information of the system) [geometry.in.next_step](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in.next_step) (Geometry of the final relaxed structure), [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/hessian.aims) (contains hessian of previous calculations, used in further convergence of relaxed structure)
 
-# Restarting structure relaxation using output from previous relaxations
+### Restarting structure relaxation using output from previous relaxations
 Input: [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/geometry.in) (geometry.in.next_step from earlier output), [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/hessian.aims) (from earlier output, keyword hessian indicates that hessian.aims will be provided with geometry.in), [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)
 
 Output: [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/aims.out)
 
-# Structure relaxation of H2O molecule using HSE
+### Structure relaxation of H2O molecule using HSE
 This is done to highlight the computational advantage of relaxing a pre-relaxed structure with light settings over starting the relaxation from scratch for a more accurate system (HSE > PBE)
 
 Input: [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/geometry.in), [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/control.in) (HSE, intermediate H,O)
