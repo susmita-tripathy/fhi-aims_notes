@@ -15,7 +15,7 @@ The aims calculations is run using the command: mpirun -n N aims.x | tee aims.ou
 ## Spin Unpolarised Simulations:
 Relaxation of H2O molecule without the effect of spin:
 
-Input: [fhi-aims_notes/H2O/geometry.in](geometry.in), [/fhi-aims_notes/H2O/control.in](control.in), (PBE, appended with light species defaults of H and O)
+Input: [geometry.in](fhi-aims_notes/H2O/geometry.in), [control.in](/fhi-aims_notes/H2O/control.in), (PBE, appended with light species defaults of H and O)
 
 Output: aims.out [] (Contains all information of the system) geometry.in.next_step (Geometry of the final relaxed structure), hessian.aims (contains hessian of previous calculations, used in further convergence of relaxed structure)
 
