@@ -50,7 +50,7 @@ hessian_file : Indicates that hessian.aims is present for this geometry <br/>
 
 Output:<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/aims.out)<br/>
- /*+/* usual *(Only files important to this tutorial are mentioned)*
+ /+/ usual *(Only files important to this tutorial are mentioned)*
 
 Point of Interest: "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps
 
@@ -63,7 +63,7 @@ Input: <br/>
 
 Output: <br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/aims.out)<br/>
-/*+/* usual 
+/+/ usual 
 
 Point of Interest: "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps (Compare between earlier output and here)  
 
@@ -83,7 +83,7 @@ initial charge : if our atom is ionised or has extra electrons (0.0, here)
 
 Output:<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/aims.out)<br/>
-/*+/* usual
+/+/ usual
 
 Point of Interest: "Current spin moment of the entire structure". Check if total spin moment of O molecule is 2.
 
