@@ -18,14 +18,10 @@ Structure optimisation of H2O molecule without the effect of spin:
 ### 1.1.1. Structure relaxation of an unphysical H20 molecule
 
 Input: 
-[geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in) (The bonds are at a bond angle of 90 degree)
-[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)
+[geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in) (The bonds are at a bond angle of 90 degree)  [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)
 
 #### Highlight: Keywords in control.in file: 
-xc - which exchange-correlation functional is used (PBE, here)
-relativistic - which approximation is used to include relativistic effects (atomic_zora (scalar)).
-relax_geometry - which algorithm is used for geometry optimisation (bfgs). The number beside defines the threshold of accuracy. (5e-3)
-spin - whether spin is being considered (none)
+xc - which exchange-correlation functional is used (PBE, here)  relativistic - which approximation is used to include relativistic effects (atomic_zora (scalar))  relax_geometry - which algorithm is used for geometry optimisation (bfgs). The number beside defines the threshold of accuracy. (5e-3)  spin - whether spin is being considered (none)
 #### Highlights: Species Defaults:
 The basis sets are modified for each atomic species for optimal performance. These values are divided into different tiers depending on accuracy/efficiency. These are already present in the FHI-aims directory and are added to the control.in. (Here, light defaults are added of H and O)
 
