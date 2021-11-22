@@ -17,75 +17,72 @@ Structure optimisation of H2O molecule without the effect of spin:
 
 ### 1.1.1. Structure relaxation of an unphysical H20 molecule
 
-Input:<br/> 
+**Input:**<br/> 
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in) (The bonds are at a bond angle of 90 degree)<br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)
-
-#### Highlight: Keywords in control.in file: 
-xc - which exchange-correlation functional is used (PBE, here)  relativistic - which approximation is used to include relativistic effects (atomic_zora (scalar))<br/>
-relax_geometry - which algorithm is used for geometry optimisation (bfgs). The number beside defines the threshold of accuracy. (5e-3)  spin - whether spin is being considered (none)
-#### Highlights: Species Defaults:
+**Highlight:** Keywords in control.in:<br/> 
+**xc** - which exchange-correlation functional is used (*PBE*, here)  relativistic - which approximation is used to include relativistic effects (*atomic_zora* (scalar))<br/>
+**relax_geometry** - which algorithm is used for geometry optimisation (*bfgs*). The number beside defines the threshold of accuracy. (*5e-3*)<br/>
+**spin** - whether spin is being considered (*none*)<br/>
+**Highlight:** Species Defaults:<br/>
 The basis sets are modified for each atomic species for optimal performance. These values are divided into different tiers depending on accuracy/efficiency. These are already present in the FHI-aims directory and are added to the control.in. (Here, light defaults are added of H and O)
 
-Output:<br/> 
+**Output:**<br/> 
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/aims.out) (Contains all information of the system)<br/>
 [geometry.in.next_step](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in.next_step) (Geometry of the final relaxed structure)<br/>
 [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/hessian.aims) (contains hessian of previous calculations, used in further convergence of relaxed structure)
 
-Point of Interest: Final total energy delivered by the s.c.f. cycle; Final geometry reached by the geometry optimization.
+**Point of Interest:** Final total energy delivered by the s.c.f. cycle; Final geometry reached by the geometry optimization.
 
 ### 1.1.2. Restarting structure relaxation using output from previous relaxations
 
-Input:<br/>
+**Input:**<br/>
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/geometry.in) (geometry.in.next_step from earlier output)<br/>
 [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/hessian.aims) (from earlier output, keyword hessian indicates that hessian.aims will be provided with geometry.in)<br/>
-[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)
-
-#### Highlight: Keywords in control.in file:
+[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)<br/>
+**Highlight:** Keywords in control.in:<br/>
 xc - hse06 0.11 : <br/>
-hse_unit - bohr : <br/>
-#### Highlight: Keywords in geometry.in file:
-trust_radius : <br/>
-hessian_file : Indicates that hessian.aims is present for this geometry <br/>
+**hse_unit** - bohr : <br/>
+**Highlight:** Keywords in geometry.in file:<br/>
+**trust_radius** - <br/>
+**hessian_file** - Indicates that hessian.aims is present for this geometry <br/>
 
-Output:<br/>
+**Output:**<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/aims.out)<br/>
- /+/ usual *(Only files important to this tutorial are mentioned)*
+ \+ usual *(Only files important to this tutorial are mentioned)*
 
-Point of Interest: "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps
+**Point of Interest:** "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps
 
 ### 1.1.3. Structure relaxation of H2O molecule using HSE
 This is done to highlight the computational advantage of relaxing a pre-relaxed structure with light settings over starting the relaxation from scratch for a more accurate system (HSE > PBE)
 
-Input: <br/>
+**Input:** <br/>
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/geometry.in)<br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/control.in) (HSE, intermediate H,O)<br/>
 
-Output: <br/>
+**Output:** <br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_3/aims.out)<br/>
-/+/ usual 
+/+ usual 
 
-Point of Interest: "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps (Compare between earlier output and here)  
+**Point of Interest:** "Computational Steps:" Number of self-consistency cycles; Number of SCF (re)initializations; Number of relaxation steps (Compare between earlier output and here)  
 
 ## 1.2. Spin Polarised Simulations:
 Structure relaxation of an O2 molecule considering spin.
 
-Input:<br/>
+**Input:**<br/>
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/geometry.in)<br/>
-[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/control.in)
+**Highlight:** Keywords in geometry.in<br/>
+**initial moment** - how many exceeding spin up electrons (*1.0*, here)<br/>
+**initial charge** - if our atom is ionised or has extra electrons (*0.0*, here)<br/>
+[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/control.in)<br/>
+**Highlight:** Keyword in control.in<br/>
+spin - To indicate that this is a spin polarised system (***collinear***)<br/>
 
-##### Highlight: Keywords in control.in
-spin - collinear : To indicate that this is a spin polarised system
-
-##### Highlight: Keywords in geometry.in
-initial moment : how many exceeding spin up electrons (1.0, here)<br/>
-initial charge : if our atom is ionised or has extra electrons (0.0, here)
-
-Output:<br/>
+**Output:**<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/aims.out)<br/>
-/+/ usual
+/+ usual
 
-Point of Interest: "Current spin moment of the entire structure". Check if total spin moment of O molecule is 2.
+**Point of Interest:** "Current spin moment of the entire structure". Check if total spin moment of O molecule is 2.
 
 ## 1.3. Periodic Systems:
 
