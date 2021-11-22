@@ -19,11 +19,11 @@ Structure optimisation of H2O molecule without the effect of spin:
 
 **Input:**<br/> 
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in) (The bonds are at a bond angle of 90 degree)<br/>
-[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)
+[control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)<br/>
 **Highlight:** Keywords in control.in:<br/> 
-**xc** - which exchange-correlation functional is used (*PBE*, here)  relativistic - which approximation is used to include relativistic effects (*atomic_zora* (scalar))<br/>
-**relax_geometry** - which algorithm is used for geometry optimisation (*bfgs*). The number beside defines the threshold of accuracy. (*5e-3*)<br/>
-**spin** - whether spin is being considered (*none*)<br/>
+*xc* - which exchange-correlation functional is used (*PBE*, here)  relativistic - which approximation is used to include relativistic effects (*atomic_zora* (scalar))<br/>
+*relax_geometry* - which algorithm is used for geometry optimisation (*bfgs*). The number beside defines the threshold of accuracy. (*5e-3*)<br/>
+*spin* - whether spin is being considered (*none*)<br/>
 **Highlight:** Species Defaults:<br/>
 The basis sets are modified for each atomic species for optimal performance. These values are divided into different tiers depending on accuracy/efficiency. These are already present in the FHI-aims directory and are added to the control.in. (Here, light defaults are added of H and O)
 
@@ -39,13 +39,13 @@ The basis sets are modified for each atomic species for optimal performance. The
 **Input:**<br/>
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/geometry.in) (geometry.in.next_step from earlier output)<br/>
 [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/hessian.aims) (from earlier output, keyword hessian indicates that hessian.aims will be provided with geometry.in)<br/>
+**Highlight:** Keywords in geometry.in file:<br/>
+*trust_radius* - <br/>
+*hessian_file* - Indicates that hessian.aims is present for this geometry <br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)<br/>
 **Highlight:** Keywords in control.in:<br/>
-xc - hse06 0.11 : <br/>
-**hse_unit** - bohr : <br/>
-**Highlight:** Keywords in geometry.in file:<br/>
-**trust_radius** - <br/>
-**hessian_file** - Indicates that hessian.aims is present for this geometry <br/>
+xc - *hse06 0.11* : <br/>
+*hse_unit* - bohr : <br/>
 
 **Output:**<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/aims.out)<br/>
@@ -72,11 +72,11 @@ Structure relaxation of an O2 molecule considering spin.
 **Input:**<br/>
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/geometry.in)<br/>
 **Highlight:** Keywords in geometry.in<br/>
-**initial moment** - how many exceeding spin up electrons (*1.0*, here)<br/>
-**initial charge** - if our atom is ionised or has extra electrons (*0.0*, here)<br/>
+*initial moment* - how many exceeding spin up electrons (*1.0*, here)<br/>
+*initial charge* - if our atom is ionised or has extra electrons (*0.0*, here)<br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/control.in)<br/>
 **Highlight:** Keyword in control.in<br/>
-spin - To indicate that this is a spin polarised system (***collinear***)<br/>
+spin - To indicate that this is a spin polarised system (*collinear*)<br/>
 
 **Output:**<br/>
 [aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/blob/main/O2/aims.out)<br/>
