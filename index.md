@@ -88,6 +88,11 @@ spin - To indicate that this is a spin polarised system (*collinear*)<br/>
 Calculations in periodic systems.
 
 ### 1.3.1. 
+Periodic Structure Relaxation of Si
+
+**Input:**<br/>
+[geometry.in]()
+
 
 
 
