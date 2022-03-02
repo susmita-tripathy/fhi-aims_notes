@@ -21,14 +21,15 @@ Structure optimisation of H2O molecule without the effect of spin:
 [geometry.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in) (The bonds are at a bond angle of 90 degree)<br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/control.in) (PBE, appended with light species defaults of H and O)<br/>
 **Highlight:** Keywords in control.in:<br/> 
-*xc* - which exchange-correlation functional is used (*PBE*, here)  relativistic - which approximation is used to include relativistic effects (*atomic_zora* (scalar))<br/>
-*relax_geometry* - which algorithm is used for geometry optimisation (*bfgs*). The number beside defines the threshold of accuracy. (*5e-3*)<br/>
+*xc* - exchange-correlation functional used (*PBE*, here)<br/>
+*relativistic* - approximation used to include relativistic effects (*atomic_zora* (scalar))<br/>
+*relax_geometry* - algorithm used for geometry optimisation (*bfgs*). The number beside defines the threshold of accuracy. (*5e-3*)<br/>
 *spin* - whether spin is being considered (*none*)<br/>
 **Highlight:** Species Defaults:<br/>
-The basis sets are modified for each atomic species for optimal performance. These values are divided into different tiers depending on accuracy/efficiency. These are already present in the FHI-aims directory and are added to the control.in. (Here, light defaults are added of H and O)
+The basis sets are modified for each atomic species for optimal performance. These values are divided into different tiers depending on accuracy/efficiency. These are already present in the FHI-aims directory and are added to the control.in. (Here, *light* defaults are added of *H* and *O*)
 
 **Output:**<br/> 
-[aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/aims.out) (Contains all information of the system)<br/>
+[aims.out](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/aims.out) (Contains all information of the system and details of convergence cycles)<br/>
 [geometry.in.next_step](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/geometry.in.next_step) (Geometry of the final relaxed structure)<br/>
 [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O/hessian.aims) (contains hessian of previous calculations, used in further convergence of relaxed structure)
 
@@ -41,10 +42,10 @@ The basis sets are modified for each atomic species for optimal performance. The
 [hessian.aims](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/hessian.aims) (from earlier output, keyword hessian indicates that hessian.aims will be provided with geometry.in)<br/>
 [control.in](https://github.com/susmita-tripathy/fhi-aims_notes/tree/main/H2O_2/control.in) (HSE, intermediate H, O)<br/>
 **Highlight:** Keywords in geometry.in file:<br/>
-*trust_radius* - <br/>
+*trust_radius* - Threshold from bfgs algorithm<br/>
 *hessian_file* - Indicates that hessian.aims is present for this geometry <br/>
 **Highlight:** Keywords in control.in:<br/>
-xc - *hse06 0.11* : <br/>
+xc - *hse06 0.11* : exchange correlation used <br/> 
 *hse_unit* - bohr : <br/>
 
 **Output:**<br/>
