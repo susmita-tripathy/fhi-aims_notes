@@ -1,6 +1,3 @@
----
-layout: default
----
 
 # FHI-aims Tutorials
 
@@ -98,17 +95,5 @@ Periodic Structure Relaxation of Si
 
 
 ***
-
-
-```
-How to write like this
-```
-
-## Dataset breakdown
-
-| **Type**                 | **# entries**
-| Row 1                    | 1       
-| Row 2                    | 184      
-| Row 3                    | 22287     
 
 
