@@ -11,6 +11,6 @@ Ongoing:
 1. Basics: structure optimisation - Familiriazation with the keywords <br/>
 
 Coming soon: <br/>
-2. XPS ($\Delta$-SCF calculation) - Usage of constraint keywords and MOM algorithm, difference between the available keywords
-3. NEXAFS 
+2. XPS ($\Delta$-SCF calculation) - Usage of constraint keywords and MOM algorithm, difference between the available keywords <br/>
+3. NEXAFS <br/>
 4. 
