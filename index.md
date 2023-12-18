@@ -10,7 +10,7 @@ The following sections are linked here: <br/>
 Ongoing:
 1. Basics: structure optimisation - Familiriazation with the keywords <br/>
 
-Coming soon:
+Coming soon: <br/>
 2. XPS ($\Delta$-SCF calculation) - Usage of constraint keywords and MOM algorithm, difference between the available keywords
 3. NEXAFS 
 4. 
