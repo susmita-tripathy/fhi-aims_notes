@@ -1,1 +1,12 @@
+### FHI-aims notes:
 
+The following notes were collected as a learning exercise for me. The notes consists of bare bone basics and scripts for running calculations in FHI-aims, mostly calculations relevant to core-hole spectra.
+
+The following sections are linked here:
+0. Installation (https:/) - How to install FHI-aims in your system <\br>
+Ongoing:
+1. Structure optimisation - Familiriazation with the keywords and basics of structure optimization
+Coming soon:
+2. XPS ($\Delta$-SCF calculation) - Usage of constraint keywords and MOM algorithm, difference between the available keywords
+3. NEXAFS 
+4. 
