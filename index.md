@@ -6,8 +6,10 @@ The following incorporates the steps required to obtain input files and results 
 
 The following sections are linked here: <br/>
 0. [Installation](https://github.com/susmita-tripathy/fhi-aims_notes/blob/35405ab50be886dcdee8f4e8a8687f5e51930c9f/Installation/index.md) - How to install FHI-aims in your system <br/>
+
 Ongoing:
 1. Basics: structure optimisation - Familiriazation with the keywords <br/>
+
 Coming soon:
 2. XPS ($\Delta$-SCF calculation) - Usage of constraint keywords and MOM algorithm, difference between the available keywords
 3. NEXAFS 
