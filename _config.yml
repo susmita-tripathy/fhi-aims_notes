@@ -4,5 +4,9 @@ description:
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-defaults:
-  layout: single
+---
+layout: default
+title: Index
+---
+layout: post
+title: Test
