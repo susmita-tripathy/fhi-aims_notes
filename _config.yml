@@ -6,7 +6,10 @@ google_analytics:
 theme: jekyll-theme-minimal
 ---
 layout: default
-title: Index
+title: index
 ---
 layout: default
 title: Coming_soon
+---
+layout: default
+title: Tutorial1/index
